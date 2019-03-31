@@ -1,8 +1,7 @@
 ## d._.b Codices - Common Terminal Commands
 ### Last Update: 3/31/2019
 
-Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some common commands when using NPM, Yarn, Brew, Git, Heroku, and more.
-This single README.md file Repo was created to help new developers with a common commands that are used through out the development proccess of building Angular apps and other related package managers and Command Line Interfaces (CLI). I will continue to update this file and hope this will help others through their development journey!
+Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some common commands when using NPM, Yarn, Brew, Git, Heroku, and more. This single README.MD file Repo was created to help new developers with common commands that are used throughout the development process of building Angular apps and other related package managers and Command Line Interfaces (CLI). I will continue to update this file and hope this will help others through their development journey!
 
 [Comman Commands Repo](https://github.com/CodicesTechnology/Common-Commands)
 
@@ -19,6 +18,14 @@ This single README.md file Repo was created to help new developers with a common
 * Express v4.16.3
 * Heroku Cli v7.22.7
 
+## Terminal
+* Navigate to a specific directory
+    * $ `cd /FOLDER/FOLDER`
+* Make folder "directory"
+    * $ `mkdir folderA`
+* Make a file
+    * $ `touch fileOne.html`
+
 ## Angular Cli 
 
 ### Angular Universal
@@ -26,6 +33,10 @@ This single README.md file Repo was created to help new developers with a common
     * `ng g universal universal`
 
 ## Git 
+
+### Git Clone
+* Clone a specific GitHub Repo by copying the HTTPS  
+    * $ `git clone https://github.com/USERNAME/REPO-NAME.git`
 
 ### New GitHub Repo and Remote
 * 1st make a new GitHub Repo.
@@ -46,9 +57,15 @@ This single README.md file Repo was created to help new developers with a common
 * Follow these steps...
 
 ## Yarn
-* Coming Soon...
+* Install dependencies, first make sure you are in the project's root directory, then run...
+    * $ `yarn install`
+* Upgrade Yarn
+    * $ `yarn upgrade`
 
 ## Homebrew
+* Coming Soon...
+
+## MongoDB
 * Coming Soon...
 
 ## Heroku Cli
