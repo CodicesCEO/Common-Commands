@@ -54,7 +54,15 @@ Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some comm
     * $ `git push -u origin master`
 
 ## Create New GitHub Branch
-* Follow these steps...
+* Make sure you are up to date on the repo.
+    * $ `git pull`
+* Make your new repo branch locally.
+    * $ `git checkout -b BRANCH-NAME`
+* Now push your newly made branch.
+    * $ `git push origin BRANCH-NAME`
+
+## Make Updates to your GitHub Branch
+* Coming soon...
 
 ## Yarn
 * Install dependencies, first make sure you are in the project's root directory, then run...
