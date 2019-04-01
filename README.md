@@ -1,6 +1,5 @@
 ## d._.b Codices - Common Terminal Commands
 ### Last Update: 3/31/2019
-
 Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some common commands when using NPM, Yarn, Brew, Git, Heroku, and more. This single README.MD file Repo was created to help new developers with common commands that are used throughout the development process of building Angular apps and other related package managers and Command Line Interfaces (CLI). I will continue to update this file and hope this will help others through their development journey!
 
 [Comman Commands Repo](https://github.com/CodicesTechnology/Common-Commands)
