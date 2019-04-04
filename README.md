@@ -56,7 +56,7 @@ Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some comm
 * Make your new repo branch locally.
     * $ `git checkout -b BRANCH-NAME`
 * Now push your newly made branch.
-    * $ `git push origin BRANCH-NAME`
+    * $ `git push -u origin BRANCH-NAME`
 
 ### REMOVE REMOTE
 * First verfiy that yor local directory has a remote. If nothing appears after the following command, it means you dont have one attached.
