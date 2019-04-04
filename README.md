@@ -17,13 +17,26 @@ Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some comm
 * Express v4.16.3
 * Heroku Cli v7.22.7
 
-## Terminal
+## Terminal/NPM
+### Making folders and files
 * Navigate to a specific directory
     * $ `cd /FOLDER/FOLDER`
-* Make folder "directory"
+* Making a folder aka "**directory**"
     * $ `mkdir folderA`
-* Make a file
+* Making a file
     * $ `touch fileOne.html`
+### USing Nodemon four auto-recompiling the server
+You can install nodemon as a project dependency or globaly to your machine
+
+* **If you want to install it the project...**
+   * $ `npm install --save-dev nodemon`
+
+* **If you want to install it globally...**
+   * $ `npm install -g nodemon`
+   
+* Then replace your "**node server.js**" start script with "**nodemon server.js**" in the **package.json** file.
+
+* Once you run $ `npm start` or your projet's start command it will begin recompiling automatically anytime you make changes to server files.
 
 ## Angular Cli 
 ### Angular Universal
