@@ -21,10 +21,13 @@ Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some comm
 ### Making folders and files
 * Navigate to a specific directory
     * $ `cd /FOLDER/FOLDER`
+    
 * Making a folder aka "**directory**"
     * $ `mkdir folderA`
+    
 * Making a file
     * $ `touch fileOne.html`
+    
 ### USing Nodemon four auto-recompiling the server
 You can install nodemon as a project dependency or globaly to your machine
 
@@ -49,25 +52,33 @@ You can install nodemon as a project dependency or globaly to your machine
     * $ `git clone https://github.com/USERNAME/REPO-NAME.git`
 
 ### New GitHub Repo and Remote
-* 1st make a new GitHub Repo.
+* 1st make a new GitHub Repo from your GitHub account. I usually never include a README file or anything else with my new repo. [GitHub](https://github.com/)
+
 * Initialize your root project directory
     * $ `git init`
+    
 * Copy the origin remote command
     * $ `git remote add origin https://github.com/USERNAME/REPO-NAME.git`
+    
 * Verify added remote origin
     * $ `git remote -v`
+    
 * Stage all your files
     * $ `git add .`
+    
 * Commit staged files
     * $ `git commit -m "MY FIRST COMMIT d._.b Codices"`
+    
 * Push to remote Repo
     * $ `git push -u origin master`
 
 ### Create New GitHub Branch
 * Make sure you are up to date on the repo.
     * $ `git pull`
+    
 * Make your new repo branch locally.
     * $ `git checkout -b BRANCH-NAME`
+    
 * Now push your newly made branch.
     * $ `git push -u origin BRANCH-NAME`
 
@@ -76,10 +87,10 @@ You can install nodemon as a project dependency or globaly to your machine
     * $ `git remote -v`
 
 * It may look something like this...
-    heroku  https://git.heroku.com/HEROKU-REPO-URL.git (fetch)
-    heroku  https://git.heroku.com/HEROKU-REPO-URL.git (push)
-    origin  https://github.com/USERNAME/REPO-NAME.git (fetch)
-    origin  https://github.com/USERNAME/REPO-NAME.git (push)
+    * heroku  https://git.heroku.com/HEROKU-REPO-URL.git (fetch)
+    * heroku  https://git.heroku.com/HEROKU-REPO-URL.git (push)
+    * origin  https://github.com/USERNAME/REPO-NAME.git (fetch)
+    * origin  https://github.com/USERNAME/REPO-NAME.git (push)
 
 * Remove the selected remote by passing the remote's label. If I wanted to remove the "heroku" remote, I would use the following...
     * $ `git remote rm heroku`
@@ -107,8 +118,42 @@ You can install nodemon as a project dependency or globaly to your machine
 
 ## Heroku Cli
 ### Heroku Deployment
-* Change code in the following files...
+* First, make sure you are logged in to your Heroku account. To login to your Heroku account run...
+   * $ `heroku login`
+   * You'll be asked to enter your email and password.
+   
+* Once you are ready to deploy your application, you need to create a Heroku repo. From your Project's root directory run the following command...
+   * $ `heroku create REPO-NAME`
+   * if you don't pass a repo-name, it generate a random Heroku repo name for you.
+   
+* If you've already made a Heroku repo or to make sure you initialized git in your local repository, from your root directory run the following command...
+   * $ `git init`
+   
+* Next, make sure you've connected your local repo to your Heroku repo by running...
+   * $ `heroku git:remote -a REPO-NAME`
+   
+* Once the setup is complete you can begin deployment by running...
+   * $ `git add .`
+   
+* Make a commit with a comment by running...
+   * $ `git commit -am "CODICES COMMENT, MADE EDITS TO REPO"`
+   
+* Finally, push your project to your Heroku repo by running...
+   * $ `git push heroku master`
+   
+### Continued deployments to your Heroku repo
+* If you're making changes to your previously deployed project and set up has been complete you simply run the following commands for each deployment version. In this order 
+   * $ `git add .`
+   * $ `git commit -am "ANOTHER COMMENT"`
+   * $ `git push heroku master`
+
+### Connecting to an existing Heroku repository
+* From your root directory run this command and then follow the deployment steps above.
+   * $ `heroku git:remote -a REPO-NAME`
+
+* You may need to initiate git in your directory. If so run...
+   * $ `git init`
 
 
-### Author
+# Author
 d._.b [Codices](https://github.com/CodicesTechnology)
