@@ -72,16 +72,6 @@ You can install nodemon as a project dependency or globaly to your machine
 * Push to remote Repo
     * $ `git push -u origin master`
 
-### Create New GitHub Branch
-* Make sure you are up to date on the repo.
-    * $ `git pull`
-    
-* Make your new repo branch locally.
-    * $ `git checkout -b BRANCH-NAME`
-    
-* Now push your newly made branch.
-    * $ `git push -u origin BRANCH-NAME`
-
 ### REMOVE REMOTE
 * First verfiy that yor local directory has a remote. If nothing appears after the following command, it means you dont have one attached.
     * $ `git remote -v`
@@ -101,9 +91,47 @@ You can install nodemon as a project dependency or globaly to your machine
 * Finally, make sure you removed the GitHub remotes by running the first command. The remiaing remotes or nothing will show.
     * $ `git remote -v`
 
-### Make Updates to your GitHub Branch
-* Coming soon...
+## BRANCHES 
 
+### Create New GitHub Branch
+* Make sure you are up to date on the repo.
+    * $ `git pull`
+    
+* Make your new repo branch locally.
+    * $ `git checkout -b BRANCH-NAME`
+    
+* Now push your newly made branch.
+    * $ `git push -u origin BRANCH-NAME`
+    
+### Remove Branches 
+* To get a list of all branches use the following command.
+    * $ `git branch -r`
+* To get a list of the branches connected to your local repository only, use...
+   * $ `git ls-remote --heads REMOTE-NAME`
+
+* For a detailed list of branches you can use...
+   * $ `git remote show REMOTE-NAME`
+   
+* Use the following command to delete the branch you want.
+   * $ `git push REMOTE-NAME --delete BRANCH-NAME`
+
+* Another common command would be.
+   * $ `git remote prune REMOTE-NAME :BRANCH-NAME`
+        
+### Push Updates to a GitHub Branch
+
+Before merging your local repository to your remote repository it is important to understand what these commands will do.
+* $ `git pull --rebase` invokes a shortcut combo script of $ `git fetch` followed by $ `git rebase`.
+* $ `git pull` invokes $`git fetch` followed by $ `git merge`.
+
+* If you want to push to an existing **non-master** remote branch,  first make sure you are up-to-date using the pull command.
+   * $`git pull origin`
+   or
+   * $`git pull origin BRANCH-NAME`
+   
+* then specify which existing **non-master** remote branch you'd like to push to.
+   * $ `git push origin BRANCH-NAME`
+   
 ## Yarn
 * Install dependencies, first make sure you are in the project's root directory, then run...
     * $ `yarn install`
