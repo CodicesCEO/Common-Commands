@@ -17,6 +17,23 @@ Using Unix/Mac terminal is simple, don't be afraid to use it. Here are some comm
 * Express v4.16.3
 * Heroku Cli v7.22.7
 
+# Setup:  
+```typescript  
+import { KeyboardShortcutsModule }     from 'ng-keyboard-shortcuts';  
+  
+@NgModule({  
+    declarations: [  
+    ],  
+    imports: [  
+        BrowserModule,  
+        KeyboardShortcutsModule.forRoot()  
+    ],  
+    bootstrap: [AppComponent]  
+})  
+export class AppModule {  
+}  
+```  
+
 ## Terminal/NPM
 ### Making folders and files
 * Navigate to a specific directory
